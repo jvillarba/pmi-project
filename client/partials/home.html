@@ -1,5 +1,157 @@
-<h1>Yo!</h1>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Bootstrap Case</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+  <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+</head>
+<body>
+
+<div class="container">
+  <br>
+  <br>
+  <br>
+</div>
 
 <div ng-controller="logoutController">
   <a ng-click='logout()' class="btn btn-default">Logout</a>
 </div>
+
+<div class="jumbotron text-center">
+    <h1>Treasure Chest</h1>
+    <p>We specialize in blablabla</p>
+</div>
+
+<div class="text-center">
+<h2 class="centered col-lg-12"><span class="line">What our customers say</span></h2>
+    <div class="container-fluid">
+        <div id="myCarousel" class="carousel slide text-center" data-ride="carousel">
+            <!-- Indicators -->
+            <ol class="carousel-indicators">
+                <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+                <li data-target="#myCarousel" data-slide-to="1"></li>
+                <li data-target="#myCarousel" data-slide-to="2"></li>
+            </ol>
+
+            <!-- Wrapper for slides -->
+            <div class="carousel-inner" role="listbox">
+                <div class="item active">
+                <h4>"This company is the best. I am so happy with the result!"<br><span style="font-style:normal;">Michael Roe, Vice President, Comment Box</span></h4>
+                </div>
+                <div class="item">
+                  <h4>"One word... WOW!!"<br><span style="font-style:normal;">John Doe, Salesman, Rep Inc</span></h4>
+                </div>
+                <div class="item">
+                  <h4>"Could I... BE any more happy with this company?"<br><span style="font-style:normal;">Chandler Bing, Actor, FriendsAlot</span></h4>
+                </div>
+            </div>
+
+            <!-- Left and right controls -->
+            <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
+                <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+                <span class="sr-only">Previous</span>
+            </a>
+            <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
+                <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+                <span class="sr-only">Next</span>
+            </a>
+        </div>
+
+        <div id="plan-block" class="plan-block">
+            <div class="container-fluid">
+                <div class="text-center">
+                    <h2 class="centered col-lg-12"><span class="line">Let's get started</span></h2>
+                    <h4>Choose a payment plan that works for you</h4>
+                </div>
+                <div class="row">
+                    <div class="col-sm-4">
+                      <div class="panel panel-default text-center">
+                        <div class="panel-heading">
+                          <h1>1 Month Trial</h1>
+                        </div>
+                        <div class="panel-body">
+                          <p><strong>Limited Time Offer</strong></p>
+                          <p><strong>15</strong> Ipsum</p>
+                          <p><strong>5</strong> Dolor</p>
+                          <p><strong>2</strong> Sit</p>
+                          <p><strong>Endless</strong> Amet</p>
+                        </div>
+                        <div class="panel-footer">
+                          <h3>Total Price:<strong> $25</strong></h3>
+                          <h4>No Renewal</h4>
+                          <button class="btn btn-lg">Select</button>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-sm-4">
+                      <div class="panel panel-default text-center">
+                        <div class="panel-heading">
+                          <h1>3 Month Trial</h1>
+                        </div>
+                        <div class="panel-body">
+                          <p><strong>Limited Time Offer</strong></p>
+                          <p><strong>25</strong> Ipsum</p>
+                          <p><strong>10</strong> Dolor</p>
+                          <p><strong>5</strong> Sit</p>
+                          <p><strong>Endless</strong> Amet</p>
+                        </div>
+                        <div class="panel-footer">
+                          <h3>Total Price:<strong> $150</strong></h3>
+                          <h4>Renews Automatically</h4>
+                          <button class="btn btn-lg">Select</button>
+                        </div>
+                      </div>
+                    </div>
+                   <div class="col-sm-4">
+                      <div class="panel panel-default text-center">
+                        <div class="panel-heading">
+                          <h1>Annual Plan</h1>
+                        </div>
+                        <div class="panel-body">
+                          <p><strong>Limited Time Offer</strong></p>
+                          <p><strong>50</strong> Ipsum</p>
+                          <p><strong>25</strong> Dolor</p>
+                          <p><strong>10</strong> Sit</p>
+                          <p><strong>Endless</strong> Amet</p>
+                        </div>
+                        <div class="panel-footer">
+                          <h3>Total Price:<strong> $300</strong></h3>
+                          <h4>Renews Automatically</h4>
+                          <button class="btn btn-lg">Select</button>
+                        </div>
+                          </div>
+                      </div>
+                </div>
+            </div>
+        </div>
+
+        <h2 class="centered col-lg-12"><span class="line">How It Works</span></h2>
+
+        <div id="procedure" class="procedure-wrap clearfix col-lg-12">
+            <div class="procedure-step col-lg-4 col-sm-4 centered">
+                <img src="#" alt="#">
+                <h4>1. Step One</h4>
+
+                <p>Join Treasure Chest. Choose Plan and Checkout.</p>
+            </div>
+            <div class="procedure-step col-lg-4 col-sm-4 centered">
+                <img src="#" alt="#">
+                <h4>2. Step Two</h4>
+
+                <p>We gather and ship items.... Every month is different!</p>
+            </div>
+            <div class="procedure-step col-lg-4 col-sm-4 centered">
+                <img src="#" alt="#">
+                <h4>3. Step Three</h4>
+
+                <p>You receive stuff! </p>
+            </div>
+        </div>
+    </div>
+</div>
+
+</body>
+</html>
