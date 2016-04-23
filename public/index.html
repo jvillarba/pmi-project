@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Treasure Chest</title>
+	<!-- <link rel="stylesheet" type="text/css" href="/css/materialize.min.css"> -->
+	<!-- <script src="css/style.css"></script> -->
+
+	<!-- DOWNLOADED LIBRARIES -->
+	<script src="js/angular.js"></script>
+	<script src="js/angular-ui-router.js"></script>
+
+	<!-- ANGULAR APP -->
+	<script src="js/app.js"></script>
+	<script src="js/mainCtrl.js"></script>
+	<script src="js/detailCtrl.js"></script>
+	<script src="js/userService.js"></script>
+	<script src="js/globalCtrl.js"></script>
+
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+	<script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+
+</head>
+<body ng-app="TreasureApp" ng-controller="GlobalController as global">
+	<nav class="navbar navbar-default">
+	  <div class="container-fluid" style="height:85px;background-color:lightgray">
+	    <!-- Brand and toggle get grouped for better mobile display -->
+	    <div class="navbar-header">
+	      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+	        <span class="sr-only">Toggle navigation</span>
+	        <span class="icon-bar"></span>
+	        <span class="icon-bar"></span>
+	        <span class="icon-bar"></span>
+	      </button>
+	      <a class="navbar-brand" href="#">Treasure Chest Logo</a>
+	    </div>
+	      <ul class="nav navbar-nav navbar-right">
+					<li><a ui-sref="home">About</a></li>
+	        <!-- <li><a ui-sref="users">Users</a></li> -->
+	        <li><a ui-sref="newUser">Subscribe</a></li>
+	        <li ng-if="!global.isAuthed()"><a ui-sref="login">Log In</a></li>
+	        <li ng-if="global.isAuthed()"><a ng-click="global.logout()">Log Out</a></li>
+        </ul>
+	  </div><!-- /.container-fluid -->
+	</nav>
+	<div ui-view></div>
+</body>
+</html>
