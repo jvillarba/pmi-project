@@ -5,9 +5,6 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
 	<title>Treasure Chest</title>
-	<!-- <link rel="stylesheet" type="text/css" href="/css/materialize.min.css"> -->
-	<!-- <script src="css/style.css"></script> -->
-
 	<!-- DOWNLOADED LIBRARIES -->
 	<script src="js/angular.js"></script>
 	<script src="js/angular-ui-router.js"></script>
@@ -21,13 +18,15 @@
 
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="stylesheet" href="./css/bootstrap.css">
+	<!-- <link rel="stylesheet" href="./css/bootstrap-theme.css"> -->
 	<script src="./js/jquery-2.2.3.js"></script>
 	<script src="./js/bootstrap.js"></script>
+	<link rel="stylesheet" href="/css/style.css" media="screen" title="Treasure" charset="utf-8">
 
 </head>
 <body ng-app="TreasureApp" ng-controller="GlobalController as global">
-	<nav class="navbar navbar-default">
-	  <div class="container-fluid" style="height:85px;background-color:lightgray">
+	<nav class="navbar navTC navbar-default">
+	  <div class="container-fluid">
 	    <!-- Brand and toggle get grouped for better mobile display -->
 	    <div class="navbar-header">
 	      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
@@ -36,7 +35,7 @@
 	        <span class="icon-bar"></span>
 	        <span class="icon-bar"></span>
 	      </button>
-	      <a class="navbar-brand" href="#">Treasure Chest Logo</a>
+	      <a class="navbar-brand" ui-sref="home">Treasure Chest Logo</a>
 	    </div>
 	      <ul class="nav navbar-nav navbar-right">
 					<li><a ui-sref="home">About</a></li>

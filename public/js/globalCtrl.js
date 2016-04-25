@@ -55,7 +55,7 @@
           // automatically attach Authorization header
             request: function(config) {
               var token = auth.getToken();
-              console.log(config.url.indexOf(API))
+              // console.log(config.url.indexOf(API))
               if(token) {
                 config.headers['x-access-token'] = token;
               }

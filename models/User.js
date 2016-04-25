@@ -6,7 +6,8 @@ var
 var userSchema = new Schema({
 	name: String,
 	email: String,
-	password: String
+	password: String,
+	admin: Boolean
 })
 
 userSchema.methods.generateHash = function(password){
