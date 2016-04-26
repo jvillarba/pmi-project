@@ -3,13 +3,43 @@ html {
 
 body {
   font-family: fantasy;
+  color: goldenrod;
+}
+
+.navbar {
+  height: 85px;
+  margin-bottom: 0;
+  background-color: midnightblue;
+  color: goldenrod;
+}
+
+footer {
+  height: 350px;
+  background-color: midnightblue;
+}
+
+.btn {
+  font-family: sans-serif;
+  box-shadow: 1px 2px 5px #000000;
 }
 
 .soon {
+  background-color: seashell;
 }
 
-.navTC {
-  background-color: lightgray;
-  height: 85px;
-  margin-bottom: 0;
+.jumbotron{
+  position: relative;
+  z-index:-101;
+}
+
+#video-background {
+  position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    overflow: hidden;
+    z-index: -100;
+    width:100%;
+    opacity: .2;
 }

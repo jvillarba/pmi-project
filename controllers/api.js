@@ -18,7 +18,11 @@ module.exports = {
 		newUser.password = newUser.generateHash(req.body.password)
 		newUser.save(function(err, user){
 			if(err) return console.log(err)
-			res.json({success: true, message: "User created!", user: user})
+			console.log(typeof process.env.secret)
+			// var token = jwt.sign(user.toObject(), process.env.secret, {
+			// 	expiresIn: 6000
+			// })
+			res.json({success: true, message: "User created!", user: user, token: token})
 		})
 
 		/* User.create(req.body, function(err, user){
@@ -51,6 +55,7 @@ module.exports = {
 		})
 	},
 
+	// authenticate user
 	authenticate: function(req,res){
 		User.findOne({email: req.body.email}, function(err, user){
 			if(err) return console.log(err)
@@ -73,6 +78,7 @@ module.exports = {
 			jwt.verify(token, process.env.secret, function(err, decoded) {
 				if(err) return res.json({success: false, message: 'failed to verify token'})
 				req.decoded = decoded
+				console.log(decoded)
 				next()
 			})
 		} else {
@@ -82,5 +88,4 @@ module.exports = {
 			})
 		}
 	}
-
 }

@@ -1,7 +1,10 @@
-<h1>The USERS template (with UI Router)</h1>
+<div style="height: 60px"></div>
 
-<div class="collection">
+<h3 style="text-shadow: 2px 2px 4px #000000;text-align: center;margin-top:60px;">Subscribers List</h3>
+
+<div class="container" style="border: 3px solid #999;width: 50%;text-align: center;padding-top:30px;">
 	<div ng-repeat="user in main.users">
-		<a ui-sref="detail({id: user._id})" class="collection-item">{{ user.name }}</a> <button ng-click="main.destroy(user._id, $index)">Delete</button>
+		<a ui-sref="detail({id: user._id})" class="collection-item">{{ user.name }}</a><br>
+		<button ng-click="main.destroy(user._id, $index)">Delete</button>
 	</div>
 </div>

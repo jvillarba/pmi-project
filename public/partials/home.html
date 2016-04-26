@@ -1,12 +1,9 @@
-<style media="screen">
-  .soon {
-    background-color: lightgray;
-  }
-
-</style>
-
 
 <div class="jumbotron">
+  <video id="video-background" preload muted autoplay loop>
+    <!-- <source src="http://www.w3schools.com/html/mov_bbb.mp4" type="video/mp4">
+    <source src="http://www.w3schools.com/html/mov_bbb.ogg" type="video/ogg"> -->
+  </video>
   <div class="container">
     <br><br><br><br><br>
     <h1>Treasure Chest</h1>
@@ -42,7 +39,7 @@
 </div>
 
 <div class="soon text-center">
-  <div class="container"><br><br>
+  <div class="container"><br>
     <h2 class="centered col-lg-12"><span class="line">COMING SOON</span></h2>
     <!-- Three columns of text below the carousel -->
     <div class="row">
@@ -58,7 +55,28 @@
         <div class="panel-footer">
           <h3>Total Price:<strong> $25</strong></h3>
           <h4>No Renewal</h4>
-          <p><a class="btn btn-default" href="#" role="button">View details &raquo;</a></p>
+          <!-- Trigger the modal with a button -->
+          <button type="button" class="btn btn-info" data-toggle="modal" data-target="#myModal1">View details &#x25BE;</button>
+
+          <!-- Modal2 -->
+          <div class="modal fade" id="myModal1" role="dialog">
+            <div class="modal-dialog">
+
+              <!-- Modal1 content-->
+              <div class="modal-content">
+                <div class="modal-header">
+                  <button type="button" class="close" data-dismiss="modal">&times;</button>
+                  <h4 class="modal-title">Modal Header</h4>
+                </div>
+                <div class="modal-body">
+                  <p>Some text in the modal.</p>
+                </div>
+                <!-- <div class="modal-footer">
+                  <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                </div> -->
+              </div>
+            </div>
+          </div>
         </div>
       </div><!-- /.col-lg-4 -->
       <div class="col-lg-4">
@@ -73,9 +91,29 @@
         <div class="panel-footer">
           <h3>Total Price:<strong> $150</strong></h3>
           <h4>Renews Automatically</h4>
-          <p><a class="btn btn-default" href="#" role="button">View details &raquo;</a></p>
-        </div>
+          <!-- Trigger the modal with a button -->
+          <button type="button" class="btn btn-info" data-toggle="modal" data-target="#myModal2">View details &#x25BE;</button>
 
+          <!-- Modal2 -->
+          <div class="modal fade" id="myModal2" role="dialog">
+            <div class="modal-dialog">
+
+              <!-- Modal content-->
+              <div class="modal-content">
+                <div class="modal-header">
+                  <button type="button" class="close" data-dismiss="modal">&times;</button>
+                  <h4 class="modal-title">Modal Header</h4>
+                </div>
+                <div class="modal-body">
+                  <p>Some text in the modal.</p>
+                </div>
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
       </div><!-- /.col-lg-4 -->
       <div class="col-lg-4">
         <img class="img-circle" src="data:image/gif;base64,R0lGODlhAQABAIAAAHd3dwAAACH5BAAAAAAALAAAAAABAAEAAAICRAEAOw==" alt="Generic placeholder image" width="140" height="140">
@@ -89,12 +127,34 @@
         <div class="panel-footer">
           <h3>Total Price:<strong> $300</strong></h3>
           <h4>Renews Automatically</h4>
-          <p><a class="btn btn-default" href="#" role="button">View details &raquo;</a></p>
+          <!-- Trigger the modal with a button -->
+          <button type="button" class="btn btn-info" data-toggle="modal" data-target="#myModal3">View details &#x25BE;</button>
+
+          <!-- Modal3 -->
+          <div class="modal fade" id="myModal3" role="dialog">
+            <div class="modal-dialog">
+
+              <!-- Modal content-->
+              <div class="modal-content">
+                <div class="modal-header">
+                  <button type="button" class="close" data-dismiss="modal">&times;</button>
+                  <h4 class="modal-title">Modal Header</h4>
+                </div>
+                <div class="modal-body">
+                  <p>Some text in the modal.</p>
+                </div>
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                </div>
+              </div>
+
+            </div>
+          </div>
         </div>
       </div><!-- /.col-lg-4 -->
 
-      <div class="">
-        <button class="btn btn-lg">Select</button>
+      <div class="container">
+          <button class="btn btn-info btn-lg">Subscribe</button>
       </div>
 
     </div><!-- /.row -->
@@ -121,7 +181,7 @@
 </div>
 
 <!-- FOOTER -->
-<footer style="height:350px;background-color:darkgray">
+<footer>
   <div class="container">
     <div class="row">
       <div class="bottom" style="bottom:0;">

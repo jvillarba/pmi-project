@@ -20,6 +20,7 @@ mongoose.connect(DB_URL, function(err){
 	console.log('Connected to ' + DB_URL)
 })
 
+//console.log(process.env.secret)
 app.set('superSecret', process.env.secret)
 
 app.use(bodyParser.urlencoded({extended:false}))

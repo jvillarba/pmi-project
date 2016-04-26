@@ -1,3 +1,5 @@
+<div style="height: 60px"></div>
+
 <div ng-if="!detail.editing">
 	<h1>{{ detail.user.name }}</h1>
 	<h2>{{ detail.user.email }}</h2>
@@ -9,4 +11,5 @@
 	<input ng-model="detail.editingUser.email" type="text" placeholder="Email">
 	<button type="submit">Update User!</button>
 	<button ng-click="detail.editing=false">Cancel</button>
+	<button ng-click="main.destroy(user._id, $index)">Delete</button>
 </form>
