@@ -2,16 +2,22 @@ body {
   color: goldenrod;
 }
 
-h1, h2, h3, h4, h5 {
-  font-family: fantasy;
+h1, h2 {
+  font-family: 'AnkeRegular';
   font-weight: bolder;
   text-shadow: 2px 2px 4px #000000;
+}
+
+p {
+   font-family: 'AnkeRegular';
+   font-weight: normal;
+   font-style: normal;
 }
 
 .navbar {
   height: 85px;
   margin-bottom: 0;
-  background-color: midnightblue;
+  background-color: #324253;
   z-index: 1;
 }
 
@@ -21,16 +27,18 @@ h1, h2, h3, h4, h5 {
 
 footer {
   height: 250px;
-  background-color: midnightblue;
+  background-color: #324253;
 }
 
 .btn {
+  background-color: #569baf;
+  border: 0 white;
   font-family: sans-serif;
-  box-shadow: 1px 2px 5px #000000;
+  /*box-shadow: 1px 2px 5px #000000;*/
 }
 
 .soon {
-  background-color: seashell;
+  background-color: #e1dad2;
 }
 
 .jumbotron {
