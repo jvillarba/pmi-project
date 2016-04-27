@@ -3,23 +3,24 @@
     <div class="col-lg-6">
     </div>
     <div class="text-center col-lg-5">
-      <h2><span class="text-muted">Welcome,<br>Now that you've found the</span></h2>
+      <h2><span class="lightgray">Welcome,<br>Now that you've found the</span></h2>
       <h1>Treasure Chest</h1>
-      <h2><span class="text-muted">We invite you to enjoy the spoils.</span></h2>
-      <p><a class="btn btn-success btn-lg" href="newUser" role="button">JOIN NOW</a></p>
+      <h2><span class="lightgray">We invite you to enjoy the spoils.</span></h2>
+      <p><a class="btn btn-success btn-lg" ui-sref="newUser" role="button">JOIN NOW</a></p>
     </div>
   </div>
 </div>
 
-<div class="text-center">
+<!-- HOW IT WORKS SECTION -->
+<div id="works" class="text-center">
   <div class="container">
     <div class="page-header">
       <h1>HOW IT WORKS</h1>
     </div>
-    <!-- Three columns of text below the carousel -->
+    <!-- Three columns of text belothe carousel -->
     <div class="row">
       <div class="col-lg-4">
-        <i class="fa fa-hand-pointer-o fa-5x" aria-hidden="true"></i>
+        <i class="fa fa-hand-pointer-o fa-rotate-40 fa-5x" aria-hidden="true"></i>
         <!-- <img class="img-circle" src="data:image/gif;base64,R0lGODlhAQABAIAAAHd3dwAAACH5BAAAAAAALAAAAAABAAEAAAICRAEAOw==" alt="Generic placeholder image" width="140" height="140"> -->
         <h2><span class="text-muted">1. Step One</span></h2>
         <p class="lead">Join Treasure Chest. Choose Plan and Checkout.</p>
@@ -42,12 +43,11 @@
   </div>
 </div>
 
-<div class="soon text-center">
-  <div class="container"><br>
-    <div class="page-header">
-      <h1><br><br>COMING SOON</h1>
+<!-- COMING SOON SECTION -->
+<div id="soon" class="soon text-center">
+  <div class="container">
+    <h1><br>COMING SOON</h1>
 
-    </div>
     <!-- Three columns of text below the carousel -->
     <div class="row">
       <div class="col-lg-4">
@@ -160,32 +160,33 @@
         </div>
       </div><!-- /.col-lg-4 -->
 
-      <div class="row"><br></div>
-      <div class="row">
-        <button class="btn btn-success btn-lg">Subscribe</button>
-      </div>
       <div class="row"></div>
+      <div class="row">
+        <p><br><br><a class="btn btn-success btn-lg" ui-sref="newUser" role="button">Subscribe</a></p>
+      </div>
+      <div class="row"><br></div>
 
     </div><!-- /.row -->
   </div>
 </div>
 
-<div class="text-center">
+<!-- ABOUT US SECTION -->
+<div id="about" class="text-center">
   <div class="container">
 
     <!-- ABOUT US -->
+    <div class="col-md-7">
     <div class="page-header">
-      <h1><br><br>ABOUT US</h1>
+      <h1><br>ABOUT US</h1>
     </div>
     <div class="row featurette">
-      <div class="col-md-7">
         <h2 class="featurette-heading">First featurette heading. <span class="text-muted">It'll blow your mind.</span></h2>
         <p class="lead">Donec ullamcorper nulla non metus auctor fringilla. Vestibulum id ligula porta felis euismod semper. Praesent commodo cursus magna, vel scelerisque nisl consectetur. Fusce dapibus, tellus ac cursus commodo.</p>
       </div>
-      <div class="col-md-5">
-        <img class="featurette-image img-responsive center-block" data-src="holder.js/500x500/auto" alt="Generic placeholder image">
-      </div>
     </div>
+      <div class="col-md-5"><br><br>
+        <img src="/images/about.png" class="featurette-image img-responsive img-rounded center-block" alt="Generic placeholder image"><br>
+      </div>
   </div>
 </div>
 
@@ -193,18 +194,16 @@
 <footer>
   <div class="container">
     <div class="row">
-      <div class="bottom" style="bottom:0;">
-        <p class="pull-right"><a href="#">Back to top</a></p>
-        <p>&copy; 2016 &middot; <a href="#">Privacy</a> &middot; <a href="#">Terms</a></p>
-
-      </div>
+      <p class="pull-right"><br><a href="#">Back to top</a></p>
     </div>
-    <div class="row">
-      <div class="pull-right" style="vertical-align: middle;">
+    <div class="row pull-right">
+        <br><br>SOCIAL MEDIA<br>
         <i class="fa fa-instagram fa-5x" aria-hidden="true"></i>
         <i class="fa fa-facebook fa-5x" aria-hidden="true"></i>
         <i class="fa fa-twitter fa-5x" aria-hidden="true"></i>
-      </div>
+    </div>
+    <div class="row lightgray">
+      <p>Copyright &copy; Treasure Chest 2016 &middot; <!-- <a href="#">Privacy</a> &middot;  --> <a href="#">Terms</a></p>
     </div>
   </div>
 </footer>

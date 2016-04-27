@@ -15,8 +15,8 @@ h1, h2, h3, h4, h5 {
   z-index: 1;
 }
 
-.text-white {
-  color: white;
+.lightgray {
+  color: lightgray;
 }
 
 footer {
@@ -34,15 +34,21 @@ footer {
 }
 
 .jumbotron {
-  background-image: url(/images/dice.png);
+  background-image: url(/images/open.png);
   background-size: cover;
-  top: -150px;
-  padding-top: 15%;
-  min-height: 800px;
+  top: -100px;
+  padding-top: 10%;
+  min-height: 700px;
   position: relative;
-  /*z-index:-1;*/
+  margin-bottom: 0;
 }
 
-.social {
+#works .fa-5x {
+  border:4px solid;
+  border-radius: 50%;
+  height: 130px;
+  line-height: 120px;
+  text-align: center;
   vertical-align: middle;
+  width: 130px;
 }
