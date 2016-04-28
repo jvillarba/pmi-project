@@ -30,23 +30,25 @@
 	  <div class="container-fluid">
 	    <!-- Brand and toggle get grouped for better mobile display -->
 	    <div class="navbar-header">
-	      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+	      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="navbar-collapse" aria-expanded="false">
 	        <span class="sr-only">Toggle navigation</span>
 	        <span class="icon-bar"></span>
 	        <span class="icon-bar"></span>
 	        <span class="icon-bar"></span>
 	      </button>
-	      <a class="navbar-brand lightgray" ui-sref="#">
-					<img style="height:60px;" src="/images/logo_final.png" alt="Treasure Chest Logo" />
-				</a>
+	      <!-- <a class="navbar-brand" ui-sref="#"> -->
+				<img style="height:90px;" src="/images/logo_final.png" alt="Treasure Chest Logo" />
+				<!-- </a> -->
 	    </div>
+      <div class="navbar-collapse collapse">
 	      <ul class="nav navbar-nav navbar-right">
 					<li><a href="#about">About</a></li>
 	        <li><a ui-sref="users">Users</a></li>
 	        <li><a ui-sref="newUser">Subscribe</a></li>
 					<li><a ng-click="global.logout()">Log Out</a></li>
 	        <li><a ui-sref="login">Log In</a></li>
-        </ul>
+        </ul>        
+      </div>
 	  </div><!-- /.container-fluid -->
 	</nav>
 	<div ui-view></div>

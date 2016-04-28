@@ -21,8 +21,13 @@ p {
   z-index: 1;
 }
 
+.navbar a {
+  color: #f3f0ec;
+  text-decoration: none;
+}
+
 .lightgray {
-  color: lightgray;
+  color: #f3f0ec;
 }
 
 footer {
@@ -41,12 +46,16 @@ footer {
   background-color: #f3f0ec;
 }
 
+.nobr	{
+  white-space:nowrap;
+}
+
 .jumbotron {
   background-image: url(/images/open1.png);
   background-size: cover;
-  top: -50px;
-  padding-top: 5%;
-  min-height: 650px;
+  top: -20px;
+  /*padding-top: 5%;*/
+  min-height: 600px;
   position: relative;
   margin-bottom: 0;
 }
