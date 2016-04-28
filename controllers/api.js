@@ -5,7 +5,7 @@ module.exports = {
 
 	// list all users
 	index: function(req,res){
-		User.find({}, 'admin email name lastName street city state zip phone', function(err, users){
+		User.find({}, function(err, users){
 			if(err) return console.log(err)
 			res.json(users)
 		})

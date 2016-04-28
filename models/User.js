@@ -12,7 +12,8 @@ var userSchema = new Schema ({
     city: String,
     state: String,
     zip: Number,
-    phone: Number
+    phone: Number,
+		tshirt: String
 })
 
 var User = mongoose.model('User', userSchema)

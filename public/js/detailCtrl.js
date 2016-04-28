@@ -16,6 +16,7 @@
 		vm.edit = function(){
 			vm.editing = true
 			vm.editingUser = {
+				admin: vm.user.admin,
 				name: vm.user.name,
 				lastName: vm.user.lastName,
 				email: vm.user.email,
@@ -25,7 +26,6 @@
 				state: vm.user.state,
 				zip: vm.user.zip,
 				phone: vm.user.phone
-
 			}
 		}
 
