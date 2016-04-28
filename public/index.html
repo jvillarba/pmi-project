@@ -26,19 +26,18 @@
 
 </head>
 <body ng-app="TreasureApp" ng-controller="GlobalController as global">
-	<nav class="navbar">
+	<nav class="navbar navbar-default" role="navigation">
 	  <div class="container-fluid">
 	    <!-- Brand and toggle get grouped for better mobile display -->
 	    <div class="navbar-header">
-	      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="navbar-collapse" aria-expanded="false">
+	      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
 	        <span class="sr-only">Toggle navigation</span>
 	        <span class="icon-bar"></span>
 	        <span class="icon-bar"></span>
 	        <span class="icon-bar"></span>
 	      </button>
-	      <!-- <a class="navbar-brand" ui-sref="#"> -->
+	      <!-- <a class="navbar-brand" ui-sref="#"> </a>-->
 				<img style="height:90px;" src="/images/logo_final.png" alt="Treasure Chest Logo" />
-				<!-- </a> -->
 	    </div>
       <div class="navbar-collapse collapse">
 	      <ul class="nav navbar-nav navbar-right">
@@ -47,7 +46,7 @@
 	        <li><a ui-sref="newUser">Subscribe</a></li>
 					<li><a ng-click="global.logout()">Log Out</a></li>
 	        <li><a ui-sref="login">Log In</a></li>
-        </ul>        
+        </ul>
       </div>
 	  </div><!-- /.container-fluid -->
 	</nav>
