@@ -1,11 +1,10 @@
-/*body {
+body {
   color: goldenrod;
-}*/
+}
 
 h1, h2 {
   font-family: 'AnkeRegular';
   font-weight: bolder;
-  color: goldenrod;
 }
 
 p {
