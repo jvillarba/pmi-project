@@ -1,17 +1,18 @@
-body {
+/*body {
   color: goldenrod;
-}
+}*/
 
 h1, h2 {
   font-family: 'AnkeRegular';
   font-weight: bolder;
-  text-shadow: 2px 2px 4px #000000;
+  color: goldenrod;
 }
 
 p {
    font-family: 'AnkeRegular';
    font-weight: normal;
    font-style: normal;
+   color: black;
 }
 
 .navbar {
@@ -31,22 +32,22 @@ footer {
 }
 
 .btn {
-  background-color: #569baf;
+  background-color: #4dc4e6;
   border: 0 white;
   font-family: sans-serif;
   /*box-shadow: 1px 2px 5px #000000;*/
 }
 
 .soon {
-  background-color: #e1dad2;
+  background-color: #f3f0ec;
 }
 
 .jumbotron {
-  background-image: url(/images/open.png);
+  background-image: url(/images/open1.png);
   background-size: cover;
-  top: -100px;
-  padding-top: 10%;
-  min-height: 700px;
+  top: -50px;
+  padding-top: 5%;
+  min-height: 650px;
   position: relative;
   margin-bottom: 0;
 }
