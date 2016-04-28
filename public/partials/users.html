@@ -1,10 +1,9 @@
-<div style="height: 60px"></div>
-
-<h3 style="text-shadow: 2px 2px 4px #000000;text-align: center;margin-top:60px;">Subscribers List</h3>
-
-<div class="container" style="border: 3px solid #999;width: 50%;text-align: center;padding-top:30px;">
-	<div ng-repeat="user in main.users">
-		<a ui-sref="detail({id: user._id})" class="collection-item">{{ user.name }}</a><br>
-		<button ng-click="main.destroy(user._id, $index)">Delete</button>
+<h1>LIST of SUBSCRIBERS</h1>
+<div class="container">
+	<div class="collection">
+		<div ng-repeat="user in main.users">
+			<li class="collection-item">{{ user.name }} {{ user.lastName }} | {{ user.city }} |
+			<a ui-sref="detail({id: user._id})">{{ user.email }}</a> <button ng-click="main.destroy(user._id, $index)">Delete</button></li>
+		</div>
 	</div>
 </div>

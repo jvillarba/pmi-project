@@ -1,15 +1,64 @@
-<div style="height: 60px"></div>
+<h2 style="text-align: center;margin-top:60px;">Member Account</h2>
 
-<div ng-if="!detail.editing">
-	<h1>{{ detail.user.name }}</h1>
-	<h2>{{ detail.user.email }}</h2>
-	<button ng-click="detail.edit()">Edit</button>
+<div class="container" style="border: 3px solid #999;width: 50%;padding:30px;">
+
+	<div ng-if="!detail.editing">
+		<p class="lead"><span class="text-muted">NAME</span> {{ detail.user.name }} {{ detail.user.lastName }}</p><hr>
+		<p class="lead"><span class="text-muted">EMAIL</span> {{ detail.user.email }}</p><hr>
+		<p class="lead"><span class="text-muted">PHONE</span> {{ detail.user.phone }}</p><hr>
+		<p class="lead"><span class="text-muted">ADDRESS</span> {{ detail.user.street }}</h4>
+		<p class="lead">{{ detail.user.city }}, {{ detail.user.state }}  {{ detail.user.zip }}</p><hr>
+		<div class="text-center">
+			<button ng-click="detail.edit()" class="btn btn-info btn-lg">Edit Profile</button>
+		</div>
+	</div>
+	<form ng-if="detail.editing" ng-submit="detail.update()">
+
+	  <!-- Nav tabs -->
+	  <ul class="nav nav-tabs">
+	    <li class="active"><a href="#profile" aria-controls="profile" role="tab" data-toggle="tab">PROFILE</a></li>
+	    <li><a href="#address" aria-controls="address" role="tab" data-toggle="tab">ADDRESS</a></li>
+	    <li><a href="#billing" aria-controls="billing" role="tab" data-toggle="tab">BILLING</a></li>
+	  </ul>
+
+	  <!-- Tab panes -->
+	  <div class="tab-content">
+	    <div id="profile" class="tab-pane fade in active">
+				<div class="input-group input-group-lg">
+		      <span class="input-group-addon"><i class="fa fa-user-plus fa-fw" aria-hidden="true"></i></span>
+		      <input type="text" class="form-control" ng-model="detail.editingUser.name" placeholder="First Name">
+		      <input type="text" class="form-control" ng-model="detail.editingUser.lastName" placeholder="Last Name">
+		    </div>
+		    <div class="input-group input-group-lg">
+		      <span class="input-group-addon"><i class="fa fa-envelope-o fa-fw" aria-hidden="true"></i></span>
+		      <input type="email" class="form-control" ng-model="detail.editingUser.email" placeholder="Email">
+		    </div>
+		    <div class="input-group input-group-lg">
+		      <span class="input-group-addon"><i class="fa fa-phone fa-fw fa-fw" aria-hidden="true"></i></span>
+					<input type="text" class="form-control" ng-model="detail.editingUser.phone" placeholder="Telephone">
+		    </div>
+				<div class="input-group input-group-lg">
+		      <span class="input-group-addon"><i class="fa fa-key fa-fw fa-fw" aria-hidden="true"></i></span>
+		      <input type="password" class="form-control" ng-model="detail.editingUser.password" placeholder="Password">
+		    </div>
+
+			</div>
+	    <div class="tab-pane fade" id="address">
+				<div class="input-group input-group-lg">
+		      <span class="input-group-addon"><i class="fa fa-home fa-fw fa-fw" aria-hidden="true"></i></span>
+					<input type="text" class="form-control" ng-model="detail.editingUser.street" placeholder="Street Address">
+		      <input type="text" class="form-control" ng-model="detail.editingUser.city" placeholder="City">
+		      <input type="text" class="form-control" ng-model="detail.editingUser.state" placeholder="State">
+		      <input type="text" class="form-control" ng-model="detail.editingUser.zip" placeholder="Zip Code">
+		    </div>
+			</div>
+	    <div class="tab-pane fade" id="billing">...</div>
+	  </div>
+		<hr>
+		<div class="text-center">
+			<button type="submit" class="btn btn-success btn-lg">Update</button>
+			<!-- <button ng-click="main.destroy(user._id, $index)" class="btn btn-danger btn-lg">Delete</button> -->
+			<button ng-click="detail.editing=false" class="btn btn-warning btn-lg">Cancel</button>
+		</div>
+  </form>
 </div>
-
-<form ng-if="detail.editing" ng-submit="detail.update()">
-	<input ng-model="detail.editingUser.name" type="text" placeholder="Name">
-	<input ng-model="detail.editingUser.email" type="text" placeholder="Email">
-	<button type="submit">Update User!</button>
-	<button ng-click="detail.editing=false">Cancel</button>
-	<button ng-click="main.destroy(user._id, $index)">Delete</button>
-</form>

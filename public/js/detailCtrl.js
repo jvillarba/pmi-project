@@ -1,5 +1,5 @@
 (function(){
-	angular.module('TreasureApp')
+	angular.module('treasureApp')
 		.controller('DetailController', DetailController)
 
 	DetailController.$inject = ['userService', '$stateParams']
@@ -17,7 +17,15 @@
 			vm.editing = true
 			vm.editingUser = {
 				name: vm.user.name,
-				email: vm.user.email
+				lastName: vm.user.lastName,
+				email: vm.user.email,
+				password: vm.user.password,
+				street: vm.user.street,
+				city: vm.user.city,
+				state: vm.user.state,
+				zip: vm.user.zip,
+				phone: vm.user.phone
+
 			}
 		}
 

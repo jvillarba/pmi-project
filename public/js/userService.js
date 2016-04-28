@@ -1,5 +1,5 @@
 (function(){
-	angular.module('TreasureApp')
+	angular.module('treasureApp')
 		.factory('userService', userService)
 
 	userService.$inject = ['$http']

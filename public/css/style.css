@@ -16,6 +16,7 @@ p {
 
 .navbar {
   height: 85px;
+  letter-spacing: 4px;
   /*margin-bottom: 0;
   background-color: #324253;
   z-index: 1;*/
@@ -55,7 +56,7 @@ footer {
   background-size: cover;
   top: -25px;
   /*padding-top: 5%;*/
-  min-height: 600px;
+  min-height: 585px;
   position: relative;
   margin-bottom: 0;
 }

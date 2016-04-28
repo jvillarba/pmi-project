@@ -1,11 +1,5 @@
 <h3 style="text-align: center;margin-top:60px;">Create Your Account</h3>
 
-<div class="create">
-  <div></div>
-  <div></div>
-</div>
-
-
 <div class="container" style="border: 3px solid #999;width: 50%;text-align: center;padding-top:30px;">
   <form ng-submit="main.create()">
     <!-- <div class="input-group input-group-lg">
@@ -13,7 +7,7 @@
     </div> -->
     <div class="input-group input-group-lg">
       <span class="input-group-addon"><i class="fa fa-user-plus fa-fw" aria-hidden="true"></i></span>
-      <input type="text" class="form-control" ng-model="main.newUser.name" placeholder="Name">
+      <input type="text" class="form-control" ng-model="main.newUser.name" placeholder="First Name">
     </div>
     <div class="input-group input-group-lg">
       <span class="input-group-addon"><i class="fa fa-envelope-o fa-fw" aria-hidden="true"></i></span>
@@ -22,7 +16,7 @@
     <div class="input-group input-group-lg">
       <span class="input-group-addon"><i class="fa fa-key fa-fw fa-fw" aria-hidden="true"></i></span>
       <input type="password" class="form-control" ng-model="main.newUser.password" placeholder="Password">
-    </div>
+    </div><hr>
     <button type="submit" class="btn btn-info btn-lg">Sign Up</button>
     <p><br>By clicking "Sign Up" you agree to the<br><br> <a href="#">Terms & Conditions</a> <br><br> Already have an account? <a ui-sref="login">Log in</a></p>
   </form>

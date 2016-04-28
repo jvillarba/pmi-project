@@ -7,9 +7,9 @@ var
 	bodyParser = require('body-parser'),
 	apiRoutes = require('./routes/api.js'),
 	dotenv = require('dotenv').load({silent: true}),
-	jwt = require('jsonwebtoken'),
 	User = require('./models/User'),
 	port = process.env.PORT || 3000
+
 
 // environment port
 var DB_URL = process.env.MLAB_LINK || 'mongodb://localhost/mean-treasure'
@@ -33,7 +33,6 @@ app.get('/', function(req,res){
 	res.sendFile(path.join(__dirname, 'public/index.html'))
 })
 
-// apply routes to application with the prefix /api
 app.use('/api', apiRoutes)
 
 app.listen(port, function(){

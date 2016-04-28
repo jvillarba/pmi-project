@@ -1,5 +1,5 @@
 (function(){
-	angular.module('TreasureApp')
+	angular.module('treasureApp')
 		.controller('MainController', MainController)
 
 	MainController.$inject = ['userService', '$state']
