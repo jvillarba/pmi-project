@@ -40,15 +40,30 @@ footer {
   background-color: #4dc4e6;
   border: 0 white;
   font-family: sans-serif;
-  /*box-shadow: 1px 2px 5px #000000;*/
 }
 
 .soon {
   background-color: #f3f0ec;
 }
 
-.nobr	{
-  white-space:nowrap;
+.pricing	{
+  text-align:center;
+  border:solid lightgray;
+  border-radius:10px;
+  padding: 15px;
+}
+
+.post-content {
+    background: none repeat scroll 0 0 #FFFFFF;
+    opacity: 0.5;
+    top:0;
+    left:0;
+    position: absolute;
+}
+
+.thumb{
+    position:relative;
+
 }
 
 .jumbotron {
