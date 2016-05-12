@@ -1,3 +1,10 @@
+<!-- <h1>Login</h1>
+<form ng-submit="global.login()">
+    <input type="email" ng-model="global.loginUser.email" placeholder="Email">
+    <input type="password" ng-model="global.loginUser.password" placeholder="Password">
+    <button type="submit">Create User</button>
+</form> -->
+
 <h3 style="text-align: center;margin-top:60px;">Log in</h3>
 
 <div class="container" style="text-align: center;padding:30px;border: 3px solid #999;width: 50%;">
@@ -9,7 +16,7 @@
     <div class="input-group input-group-lg">
       <span class="input-group-addon"><i class="fa fa-key fa-fw fa-fw" aria-hidden="true"></i></span>
       <input type="password" class="form-control" ng-model="global.loginUser.password" placeholder="Password">
-    </div>
+    </div><hr>
     <button type="submit" class="btn btn-info btn-lg">Login</button>
     or <a ui-sref="newUser">Sign up</a>
   </form>

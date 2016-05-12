@@ -11,12 +11,13 @@
 		userService.show($stateParams.id).success(function(results){
 			vm.user = results
 			console.log(vm.user)
+			console.log(results.name)
 		})
 
 		vm.edit = function(){
 			vm.editing = true
 			vm.editingUser = {
-				admin: vm.user.admin,
+				// admin: vm.user.admin,
 				name: vm.user.name,
 				lastName: vm.user.lastName,
 				email: vm.user.email,
@@ -34,6 +35,13 @@
 			userService.update($stateParams.id, vm.editingUser).success(function(response){
 				vm.editing = false
 				vm.user = response.user
+			})
+		}
+
+		vm.destroy = function(id, index){
+			userService.destroy(id).success(function(response){
+				// console.log(response)
+				vm.user.splice(index, 1)
 			})
 		}
 	}

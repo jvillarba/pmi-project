@@ -22,10 +22,9 @@
 
 		vm.destroy = function(id, index){
 			userService.destroy(id).success(function(response){
-				console.log(response)
+				// console.log(response)
 				vm.users.splice(index, 1)
 			})
 		}
-
 	}
 })()

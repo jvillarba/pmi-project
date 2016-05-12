@@ -1,9 +1,9 @@
-<h1>LIST of SUBSCRIBERS</h1>
 <div class="container">
+	<h1>List of Subscribers</h1>
+
 	<div class="collection">
 		<div ng-repeat="user in main.users">
-			<li class="collection-item">{{ user.name }} {{ user.lastName }} | {{ user.city }} |
-			<a ui-sref="detail({id: user._id})">{{ user.email }}</a> <button ng-click="main.destroy(user._id, $index)">Delete</button></li>
+			<a ui-sref="detail({id: user._id})" class="collection-item">{{ user.name }} {{ user.lastName }} | {{ user.city }} | {{ user.email }}</a> <button ng-click="main.destroy(user._id, $index)">Delete</button>
 		</div>
 	</div>
 </div>

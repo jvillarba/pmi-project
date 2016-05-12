@@ -1,3 +1,16 @@
+<!-- <div ng-if="!detail.editing">
+	<h1>{{ detail.user.name }}</h1>
+	<h2>{{ detail.user.email }}</h2>
+	<button ng-click="detail.edit()">Edit</button>
+</div>
+
+<form ng-if="detail.editing" ng-submit="detail.update()">
+	<input ng-model="detail.editingUser.name" type="text" placeholder="Name">
+	<input ng-model="detail.editingUser.email" type="text" placeholder="Email">
+	<button type="submit">Update User!</button>
+	<button ng-click="detail.editing=false">Cancel</button>
+</form> -->
+
 <h2 style="text-align: center;margin-top:60px;">Member Account</h2>
 
 <div class="container" style="border: 3px solid #999;width: 50%;padding:30px;">
@@ -10,19 +23,73 @@
 		<p class="lead">{{ detail.user.city }}, {{ detail.user.state }}  {{ detail.user.zip }}</p><hr>
 		<div class="text-center">
 			<button ng-click="detail.edit()" class="btn btn-info btn-lg">Edit Profile</button>
+			<button ng-click="detail.destroy(user._id, $index)" class="btn btn-danger btn-lg">Delete</button>
 		</div>
 	</div>
-	<form ng-if="detail.editing" ng-submit="detail.update()">
+
+	<form name="outerForm" class="tab-form-demo" ng-if="detail.editing" ng-submit="detail.update()">
+	    <uib-tabset active="activeForm">
+	      <uib-tab index="0" heading="PROFILE">
+	        <ng-form name="nestedForm">
+	          <div class="form-group">
+							<label>Profile</label>
+				      <input type="text" class="form-control" ng-model="detail.editingUser.name" placeholder="First Name">
+				      <input type="text" class="form-control" ng-model="detail.editingUser.lastName" placeholder="Last Name">
+	          </div>
+	          <div class="form-group">
+				      <input type="text" class="form-control" ng-model="detail.editingUser.email" placeholder="Email">
+	          </div>
+	          <div class="form-group">
+				      <input type="text" class="form-control" ng-model="detail.editingUser.phone" placeholder="Telephone">
+	          </div>
+	          <div class="form-group">
+				      <input type="text" class="form-control" ng-model="detail.editingUser.password" placeholder="Password">
+	          </div>
+	        </ng-form>
+	      </uib-tab>
+	      <uib-tab index="1" heading="ADDRESS">
+	        <ng-form name="nestedForm">
+	          <div class="form-group">
+	            <label>Address</label>
+				      <input type="text" class="form-control" ng-model="detail.editingUser.street" placeholder="Street Address">
+	          </div>
+	          <div class="form-group">
+				      <input type="text" class="form-control" ng-model="detail.editingUser.city" placeholder="City">
+	          </div>
+	          <div class="form-group">
+				      <input type="text" class="form-control" ng-model="detail.editingUser.state" placeholder="State">
+	          </div>
+	          <div class="form-group">
+				      <input type="text" class="form-control" ng-model="detail.editingUser.zip" placeholder="Zip Code">
+	          </div>
+	        </ng-form>
+	      </uib-tab>
+	      <uib-tab index="2" heading="BILLING">
+	        <ng-form name="nestedForm">
+	          <div class="form-group">
+	            <label>Billing</label>
+							<input type="text" class="form-control" ng-model="detail.editingUser.credit" placeholder="Credit Card">
+	          </div>
+	        </ng-form>
+	      </uib-tab>
+	    </uib-tabset>
+			<div class="text-center">
+				<button type="submit" class="btn btn-success btn-lg">Update</button>
+				<button ng-click="detail.editing=false" class="btn btn-warning btn-lg">Cancel</button>
+			</div>
+	  </form>
+
+	<!-- <form ng-if="detail.editing" ng-submit="detail.update()"> -->
 
 	  <!-- Nav tabs -->
-	  <ul class="nav nav-tabs">
+	  <!-- <ul class="nav nav-tabs">
 	    <li class="active"><a href="#profile" aria-controls="profile" role="tab" data-toggle="tab">PROFILE</a></li>
 	    <li><a href="#address" aria-controls="address" role="tab" data-toggle="tab">ADDRESS</a></li>
 	    <li><a href="#billing" aria-controls="billing" role="tab" data-toggle="tab">BILLING</a></li>
-	  </ul>
+	  </ul> -->
 
 	  <!-- Tab panes -->
-	  <div class="tab-content">
+	  <!-- <div class="tab-content">
 	    <div id="profile" class="tab-pane fade in active">
 				<div class="input-group input-group-lg">
 		      <span class="input-group-addon"><i class="fa fa-user-plus fa-fw" aria-hidden="true"></i></span>
@@ -57,8 +124,8 @@
 		<hr>
 		<div class="text-center">
 			<button type="submit" class="btn btn-success btn-lg">Update</button>
-			<!-- <button ng-click="main.destroy(user._id, $index)" class="btn btn-danger btn-lg">Delete</button> -->
 			<button ng-click="detail.editing=false" class="btn btn-warning btn-lg">Cancel</button>
+			<button ng-click="main.destroy(user._id, $index)" class="btn btn-danger btn-lg">Delete</button>
 		</div>
-  </form>
+  </form> -->
 </div>
