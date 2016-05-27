@@ -28,6 +28,7 @@
         function handleRequest(res) {
             var token = res.data ? res.data.token : null;
             if(token) {
+              console.log(res.data.user);
               console.log('JWT:', token);
               $state.go('home');
             }
