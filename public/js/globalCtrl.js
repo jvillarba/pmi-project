@@ -30,7 +30,7 @@
             if(token) {
               console.log(res.data.user);
               console.log('JWT:', token);
-              $state.go('home');
+              $state.go('detail');
             }
             vm.message = res.data.message;
         }

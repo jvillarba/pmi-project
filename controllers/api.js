@@ -61,7 +61,7 @@ module.exports = {
 			var token = jwt.sign(user.toObject(), process.env.secret, {
 				expiresInMinutes: 1440
 			})
-			res.json({success: true, message: "Boom! Token!", token: token})
+			res.json({success: true, message: "Here's your token!", token: token})
 		})
 	},
 

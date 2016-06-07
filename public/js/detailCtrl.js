@@ -11,7 +11,7 @@
 		userService.show($stateParams.id).success(function(results){
 			vm.user = results
 			console.log(vm.user)
-			console.log(results.name)
+			console.log(results.id)
 		})
 
 		vm.edit = function(){

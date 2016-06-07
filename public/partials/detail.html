@@ -11,9 +11,31 @@
 	<button ng-click="detail.editing=false">Cancel</button>
 </form> -->
 
+<div class="container" style="text-align: center;margin-top:60px;">
+  <div class="row">
+    <div class="col-xs-4">
+      <h1>1</h1>
+    </div><!-- /.col-lg-4 -->
+    <div class="col-xs-4">
+      <h1>2</h1>
+    </div><!-- /.col-lg-4 -->
+    <div class="col-xs-4">
+      <h1>3</h1>
+    </div><!-- /.col-lg-4 --><br>
+    <div class="col-xs-4">
+      <h3>Account</h3>
+    </div><!-- /.col-lg-4 -->
+    <div class="col-xs-4">
+      <h3>Delivery</h3>
+    </div><!-- /.col-lg-4 -->
+    <div class="col-xs-4">
+      <h3><span style="color:lightgray;">Payment</span></h3>
+    </div><!-- /.col-lg-4 -->
+  </div><!-- /.row -->
+
 <h2 style="text-align: center;margin-top:60px;">Member Account</h2>
 
-<div class="container" style="border: 3px solid #999;width: 50%;padding:30px;">
+<div class="container init" style="border: 3px solid #999;width: 75%;padding:30px;">
 
 	<div ng-if="!detail.editing">
 		<p class="lead"><span class="text-muted">NAME</span> {{ detail.user.name }} {{ detail.user.lastName }}</p><hr>
@@ -78,4 +100,5 @@
 				<button ng-click="detail.editing=false" class="btn btn-warning btn-lg">Cancel</button>
 			</div>
 	  </form>
+</div>
 </div>

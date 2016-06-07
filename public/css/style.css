@@ -87,6 +87,17 @@ footer {
   width: 130px;
 }
 
+.circle {
+  border:4px solid;
+  fill: lightgray;
+  border-radius: 50%;
+  height: 80px;
+  width: 80px;
+  /*line-height: 120px;*/
+  /*text-align: center;*/
+  /*vertical-align: middle;*/
+}
+
 .navbar-default {
   background-color: #324253;
   border-color: #324253;

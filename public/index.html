@@ -45,7 +45,7 @@
 	      <ul id="nav-mobile" class="nav navbar-nav navbar-right">
 	        <li><a ui-sref="home">Home</a></li>
 	        <li ng-if="admin"><a ui-sref="users">Users</a></li>
-	        <!-- <li ng-if="global.isAuthed()"><a ui-sref="detail">Profile</a></li> -->
+	        <li ng-if="global.isAuthed()"><a ui-sref="detail">Profile</a></li>
 	        <li ng-if="!global.isAuthed()"><a ui-sref="newUser">Subscribe</a></li>
 	        <li ng-if="!global.isAuthed()"><a ui-sref="login">Log In</a></li>
 					<li ng-if="global.isAuthed()"><a ng-click="global.logout()">Log Out</a></li>
